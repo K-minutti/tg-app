@@ -8,7 +8,8 @@ from PIL import Image
 import streamlit as st
 
 st.set_page_config(layout="wide",initial_sidebar_state="collapsed" )
-
+NAME = "Your name"
+IMAGE_LOGO = "./icon.png"
 PAGES = {
     "Home" : home,
     "Engagement" : engagement, 
@@ -32,6 +33,5 @@ name = settings.NAME
 st.sidebar.subheader(name)
 # then name = settings.NAME
 page = PAGES[selection]
-
 #main container
 page.app()
