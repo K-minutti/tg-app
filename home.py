@@ -2,7 +2,8 @@ import streamlit as st
 import graphistry
 import pandas as pd
 from css import all_css
-from components import GraphistrySt #URLParam
+from components import GraphistrySt 
+#URLParam
 graphistry.register(api=3, protocol="https", server="hub.graphistry.com", username="kevin", password="KM!3000billion")
     
     ## or via fresh short-lived token below that expires in 1:00:00 after initial generation 
@@ -54,9 +55,9 @@ def app():
         # Render main viz area based on computed filter pipeline results and sidebar settings
         main_area(**sidebar_filters, **filter_pipeline_result)
 
-    except Exception as exn:
+    except Exception as e:
         st.write('Error loading dashboard')
-        st.write(exn)
+        st.write(e)
 
     # links = pd.read_csv("./lesm.csv")
     # g = graphistry.bind(source="source", destination="target")
