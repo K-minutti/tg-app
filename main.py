@@ -8,6 +8,7 @@ from PIL import Image
 import streamlit as st
 
 st.set_page_config(layout="wide",initial_sidebar_state="collapsed" )
+#add page_icon=, page_title=
 NAME = "Your name"
 IMAGE_LOGO = "./icon.png"
 PAGES = {
