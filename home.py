@@ -7,8 +7,9 @@ from components import GraphistrySt
 graphistry.register(api=3, protocol="https", server="hub.graphistry.com", username="kevin", password="KM!3000billion")
     
     ## or via fresh short-lived token below that expires in 1:00:00 after initial generation 
-    ## graphistry.register(api=3, protocol="https", server="hub.graphistry.com", token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImtldmluIiwiaWF0IjoxNjE1NzU4MzM5LCJleHAiOjE2MTU3NjE5MzksImp0aSI6ImUzNDIzZWZiLTFhZjEtNDljMC05OTQ1LTRhMWVjYzE0ZTEyYiIsInVzZXJfaWQiOjM4ODQsIm9yaWdfaWF0IjoxNjE1NzU4MzM5fQ.bcUynRysVUwVrWQcTaD1Dv-U7GqlImNFXLMeLUhql_A") 
-
+    ## graphistry.register(api=3, protocol="https", server="hub.graphistry.com", token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImtldmluIiwiaWF0IjoxNjE1ODQ5ODcyLCJleHAiOjE2MTU4NTM0NzIsImp0aSI6IjQ5MjI0NzliLTJjMTAtNDA3YS04MWI2LTI1ZTA2YjUzZGVhNiIsInVzZXJfaWQiOjM4ODQsIm9yaWdfaWF0IjoxNjE1ODQ5ODcyfQ.sf5e0fRuZ5d_oNpzsZ1kuywBclbcBS0FmuSISnK4_1A") 
+  
+  
 def sidebar_area():
     # regular param (not in url)
     e = st.sidebar.number_input('Number of edges', min_value=10, max_value=100000, value=100, step=20)
