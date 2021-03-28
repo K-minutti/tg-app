@@ -103,7 +103,7 @@ def app():
     custom_css()
     st.title("This is APP2 and this will be our engagement section")
     try:
-        sidebar_filters = sidebar_area()
+        sidebar_filters = sidebar()
         if sidebar_filters is None:
             return
 
